@@ -1,5 +1,4 @@
 :root {
-  /* --color-primary: ; */
   --color-white: #ffffff;
   --color-black: #000000;
   --color-light-gray: #f2f2f2;
@@ -56,7 +55,7 @@
     --fz-text-medium: 28px;
     --fz-text-small: 24px;
 
-    --container: 90.63vw;
+    --container: min(90.63vw, 1740px);
   }
 }
 

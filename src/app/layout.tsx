@@ -3,6 +3,7 @@ import Wrapper from '@/components/ui/Wrapper';
 import '@/styles/nullstyle.css';
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
+import Footer from '@/components/ui/Footer';
 
 export const metadata: Metadata = {
   title: 'gid.group',
@@ -18,13 +19,12 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        <Wrapper>
-          <Container>
-            {/* header */}
+        <Container>
+          <Wrapper>
             <div id="content">{children}</div>
-            {/* footer */}
-          </Container>
-        </Wrapper>
+            <Footer />
+          </Wrapper>
+        </Container>
       </body>
     </html>
   );
