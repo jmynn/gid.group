@@ -1,0 +1,7 @@
+.menu {
+  background: transparent;
+  flex: 0 0 36px;
+}
+.menu > svg {
+  width: 100%;
+}

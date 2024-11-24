@@ -1,0 +1,20 @@
+.link {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 276px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: var(--fz-text-medium);
+  line-height: var(--line-height);
+  color: var(--color-white);
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  background: color-mix(in srgb, var(--color-black), transparent 60%);
+}
+@media screen and (min-width: 1920px) {
+  .link {
+    width: 348px;
+    font-size: var(--fz-text-small);
+  }
+}

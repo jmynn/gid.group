@@ -1,0 +1,11 @@
+.logo {
+  /* flex: 0 0 185px; */
+  width: 185px;
+  position: relative;
+  margin: 0 auto;
+}
+@media screen and (min-width: 834px) {
+  .logo > svg {
+    position: absolute;
+  }
+}

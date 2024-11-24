@@ -1,0 +1,27 @@
+.header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  padding: 60px 0;
+  width: 100%;
+}
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--container);
+  margin: 0 auto;
+}
+.phone {
+  display: block;
+  flex: 0 0 29px;
+}
+.phone > svg {
+  width: 100%;
+}
+@media screen and (min-width: 834px) {
+  .header {
+    padding: 35px 0;
+    background: color-mix(in srgb, var(--color-black), transparent 60%);
+  }
+}
