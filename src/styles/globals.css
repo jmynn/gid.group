@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/** nullstyle подключать в layout.tsx  */
+@import './stylekit.css';
+
+body {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-size: var(--fz-text-regular);
+	font-weight: 400;
+	color: var(--color-black);
+	background-color: var(--color-white);
+}
+#content {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	width: inherit;
+}
+._hover {
+	transition: var(--transition);
+	opacity: 1;
+}
+@media screen and (hover: hover) and (pointer: fine) {
+	._hover:hover {
+		cursor: pointer;
+		transition: var(--transition);
+		opacity: 0.7;
+	}
+}

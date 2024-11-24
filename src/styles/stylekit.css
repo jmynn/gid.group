@@ -1,0 +1,63 @@
+:root {
+  /* --color-primary: ; */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-light-gray: #f2f2f2;
+  --color-light-gray-2: #e0e0e0;
+  --color-gray: #828282;
+  --color-dark-gray: #4f4f4f;
+  --color-dark-gray-2: #333333;
+  --color-accent: #faff09;
+  --color-error: #eb5757;
+  --color-light-beige: #f9f3e6;
+  --color-light-pink: #e7d0d0;
+
+  --svg-color-dark: var(--color-black);
+  --svg-color-light: #BDBDBD;
+
+  --line-height: 120%;
+  --fz-headline-1: 36px;
+  --fz-headline-2: 24px;
+
+  --fz-text-regular: 14px;
+
+  --fz-text-large: 48px;
+  --fz-text-medium: 18px;
+
+  --container: 93.87vw;
+  --container-undo: calc((100vw - var(--container)) / 2 * -1);
+
+  --transition: all ease-in-out 0.3s;
+}
+
+@media screen and (min-width: 834px) {
+  :root {
+    --line-height: 150%;
+    --fz-headline-1: 48px;
+
+    --fz-text-regular: 18px;
+
+    --fz-text-large: 36px;
+    --fz-text-small: 14px;
+
+    --container: 95.08vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    --line-height: 120%;
+    --fz-headline-1: 80px;
+    --fz-headline-2: 48px;
+
+    --fz-text-regular: 18px;
+
+    --fz-text-large: 36px;
+    --fz-text-medium: 28px;
+    --fz-text-small: 24px;
+
+    --container: 90.63vw;
+  }
+}
+
+/*! @font-face for src/fonts/.. */
