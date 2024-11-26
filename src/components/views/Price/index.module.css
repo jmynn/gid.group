@@ -1,0 +1,29 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media screen and (min-width: 834px) {
+  .price {
+    margin: 0 0 15px 0;
+  }
+  .row {
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .price {
+    gap: 55px;
+    margin: 0 0 40px 0;
+  }
+}

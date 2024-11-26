@@ -1,0 +1,27 @@
+.item {
+  position: relative;
+  display: flex;
+  align-items: first baseline;
+  gap: 5px;
+  white-space: pre-line;
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--color-dark-gray-2);
+}
+.item::before {
+  content: '';
+  width: 10px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-black);
+}
+
+@media screen and (min-width: 1920px) {
+  .item {
+    font-size: var(--fz-text-large);
+    gap: 10px;
+  }
+
+  .item::before {
+    width: 20px;
+  }
+}

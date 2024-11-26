@@ -1,4 +1,10 @@
-import { TypeAboutItem, TypePaths, TypeReadonly, TypeSVGColor } from '@/types';
+import {
+  TypeAboutItem,
+  TypeBonus,
+  TypePaths,
+  TypeReadonly,
+  TypeSVGColor
+} from '@/types';
 
 export const SVG_COLORS = {
   light: 'var(--svg-color-light)',
@@ -33,3 +39,8 @@ export const ABOUT_INFO = [
     text: 'Нужно лучшее – закажи\n это у лучших!'
   }
 ] as TypeReadonly<TypeAboutItem, 'array'>;
+
+export const BONUSES = [
+  'чек листы на 5 ошибок в\n строительстве',
+  '5 трендов 2021 года на дизайн\n интерьеров'
+] as TypeReadonly<TypeBonus, 'array'>;

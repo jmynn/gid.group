@@ -1,10 +1,10 @@
-import { TypePaths } from '@/types';
+import { TypePath } from '@/types';
 import styles from './index.module.css';
 import { FunctionComponent, ReactNode } from 'react';
 import Link from 'next/link';
 
 type Props = {
-  path: TypePaths[keyof TypePaths];
+  path: TypePath;
   children: ReactNode;
 };
 
