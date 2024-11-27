@@ -1,14 +1,13 @@
 'use client';
 import Link from 'next/link';
 import styles from './index.module.css';
-import { FunctionComponent, HTMLAttributes, ReactNode } from 'react';
-import { TypePath } from '@/types';
+import { FunctionComponent, ReactNode } from 'react';
+import { TypePath, TypePropsClassname } from '@/types';
 
 type Props = {
   children: ReactNode;
   path: TypePath;
-  className?: HTMLAttributes<HTMLLinkElement>['className'];
-};
+} & TypePropsClassname<HTMLLinkElement>;
 
 const ButtonLinkBlack: FunctionComponent<Props> = ({
   children,

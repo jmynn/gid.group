@@ -58,6 +58,9 @@
       margin: 0;
     }
   }
+  .info > *:last-child {
+    padding: 0 0 15px 0;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -77,5 +80,8 @@
         width: 762px;
       }
     }
+  }
+  .info > *:last-child {
+    padding: 0 0 35px 0;
   }
 }

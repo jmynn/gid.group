@@ -1,6 +1,7 @@
 import About from '@/components/views/About';
 import Main from '@/components/views/Main';
 import Price from '@/components/views/Price';
+import Services from '@/components/views/Services';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Main />
       <About />
       <Price />
+      <Services />
     </>
   );
 }
