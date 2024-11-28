@@ -1,7 +1,7 @@
 'use client';
 import { useSyncExternalStore } from 'react';
 
-type TypeQuery = `(${string})`;
+export type TypeQuery = `(${string})`;
 type TypeHookMedia = (query: TypeQuery) => boolean;
 type TypeCallback = () => void;
 

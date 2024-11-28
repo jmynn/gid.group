@@ -1,26 +1,36 @@
 'use client';
-import { SERVICES, SIZES } from '@/data';
 import styles from './index.module.css';
-import { FunctionComponent, useMemo } from 'react';
-import useMediaQuery from '@/hooks/useMediaQuery';
+import { FunctionComponent } from 'react';
+import useMediaQuery, { TypeQuery } from '@/hooks/useMediaQuery';
 import { TypePropsClassname } from '@/types';
 
-type Props = Required<TypePropsClassname<HTMLDivElement>>;
+type Props = TypePropsClassname<HTMLDivElement> & {
+  countElement: number;
+  defaultPosition: 0 | 25 | 33 | 50;
+  defaultSide?: 'left' | 'right';
+  mediaQuery: TypeQuery | `${TypeQuery} and ${TypeQuery}`;
+};
 
-const Sticks: FunctionComponent<Props> = ({ className }) => {
-  const isTablet = useMediaQuery(`(min-width: ${SIZES.TABLET}px)`);
-  const isDesktop = useMediaQuery(`(min-width: ${SIZES.DESKTOP}px)`);
-  const countElement = useMemo(() => SERVICES.length, []);
+const Sticks: FunctionComponent<Props> = ({
+  className,
+  countElement,
+  defaultPosition,
+  mediaQuery,
+  defaultSide = 'left'
+}) => {
+  const isMedia = useMediaQuery(mediaQuery);
 
   return (
     <>
-      {isTablet && !isDesktop && <div className={`${className}`}></div>}
-      {isDesktop &&
-        Array.from({ length: countElement - 1 }, (_, i) => (
+      {isMedia &&
+        Array.from({ length: countElement }, (_, i) => (
           <div
-            className={`${className}`}
+            className={`${styles.stick} ${className}`}
             key={i}
-            id={styles[`_${i + 1}`]}
+            style={{
+              [defaultSide]: `${(i + 1) * defaultPosition}%`,
+              translate: `${(i + 1) * defaultPosition * -1}% 0`
+            }}
           ></div>
         ))}
     </>
