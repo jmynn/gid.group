@@ -1,4 +1,4 @@
-import { HTMLAttributes } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 
 export type TypeReadonly<T, K extends 'object' | 'array'> = K extends 'object'
   ? Readonly<T>
@@ -37,4 +37,11 @@ export type TypeProject = {
   style: TypeStyle;
   footage: number;
   src: TypeUrl;
+};
+
+export type TypeStage = {
+  icon: ReactNode;
+  title: string;
+  text: string;
+  description?: string;
 };

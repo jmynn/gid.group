@@ -1,3 +1,9 @@
+import IconCalculator from '@/components/ui/Icons/IconCalculator';
+import IconMail from '@/components/ui/Icons/IconMail';
+import IconObject from '@/components/ui/Icons/IconObject';
+import IconPaper from '@/components/ui/Icons/IconPaper';
+import IconRoller from '@/components/ui/Icons/IconRoller';
+import IconRuler from '@/components/ui/Icons/IconRuler';
 import {
   TypeAboutItem,
   TypeBonus,
@@ -5,6 +11,7 @@ import {
   TypeProject,
   TypeReadonly,
   TypeService,
+  TypeStage,
   TypeSVGColor
 } from '@/types';
 
@@ -141,3 +148,41 @@ export const PROJECTS = [
     src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-3.png?alt=media&token=bff7c4d9-37c6-49ee-b54f-e4155a14f696`
   }
 ] as TypeReadonly<TypeProject, 'array'>;
+
+export const STAGES = [
+  {
+    icon: <IconMail />,
+    title: 'Заявка',
+    text: 'Оставляйте заявку на сайте и получите 2 варианта планировки квартиры БЕСПЛАТНО',
+    description: 'Оставить заявку'
+  },
+  {
+    icon: <IconRuler />,
+    title: 'Дизайн',
+    text: 'Собираете на сайте стиль из четырех готовых решений с возможностью редактирования',
+    description: 'Выбрать дизайн'
+  },
+  {
+    icon: <IconCalculator />,
+    title: 'Расчет',
+    text: 'Расчитываете финальную стоимость ремонта с помощью онлайн-калькулятора',
+    description: 'Посчитать'
+  },
+  {
+    icon: <IconPaper />,
+    title: 'Договор',
+    text: 'Собираете на сайте стиль из четырех готовых решений с возможностью редактирования',
+    description: 'Оставить заявку'
+  },
+  {
+    icon: <IconRoller />,
+    title: 'Ремонт',
+    text: 'Собираете на сайте стиль из четырех готовых решений с возможностью редактирования',
+    description: 'Оставить заявку'
+  },
+  {
+    icon: <IconObject />,
+    title: 'Сдача объекта',
+    text: 'Расчитываете финальную стоимость ремонта с помощью онлайн-калькулятора'
+  }
+] as TypeReadonly<TypeStage, 'array'>;

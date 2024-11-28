@@ -1,0 +1,33 @@
+@media screen and (min-width: 1920px) {
+  .dashed {
+    position: absolute;
+    top: 53%;
+    translate: 0 -53%;
+    width: 100%;
+    border-bottom: 2px dashed var(--color-black);
+    &::before,
+    &::after {
+      content: '';
+    }
+    & > div,
+    &::before,
+    &::after {
+      height: 87px;
+      border-right: 2px dashed var(--color-black);
+      position: absolute;
+      top: 50%;
+    }
+    & > div {
+      left: 50%;
+      translate: -50% -50%;
+    }
+    &::before {
+      left: 15%;
+      translate: -15% -50%;
+    }
+    &::after {
+      right: 15%;
+      translate: 0 -50%;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import Main from '@/components/views/Main';
 import Price from '@/components/views/Price';
 import Projects from '@/components/views/Projects';
 import Services from '@/components/views/Services';
+import Stages from '@/components/views/Stages';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Price />
       <Services />
       <Projects />
+      <Stages />
     </>
   );
 }
