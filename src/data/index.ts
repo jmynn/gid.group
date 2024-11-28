@@ -2,6 +2,7 @@ import {
   TypeAboutItem,
   TypeBonus,
   TypePaths,
+  TypeProject,
   TypeReadonly,
   TypeService,
   TypeSVGColor
@@ -74,3 +75,69 @@ export const SERVICES = [
     text: 'Идейные соображения высшего порядка обеспечивает актуальность глубокомысленных рассуждений. '
   }
 ] as TypeReadonly<TypeService, 'array'>;
+
+export const PROJECTS = [
+  {
+    id: `project-${0}`,
+    title: 'Квартира на Академической',
+    style: 'Лофт',
+    footage: 130,
+    src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-1.png?alt=media&token=4123edb1-73c9-48ff-bf6e-ec07fc5dae5c`
+  },
+  {
+    id: `project-${1}`,
+    title: 'Квартира на Рижской',
+    style: 'Скандинавский',
+    footage: 94,
+    src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-2.png?alt=media&token=468367b4-1b90-4132-b614-173384ce6624`
+  },
+  {
+    id: `project-${2}`,
+    title: 'Квартира на Чистых прудах',
+    style: 'Лофт',
+    footage: 68,
+    src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-3.png?alt=media&token=bff7c4d9-37c6-49ee-b54f-e4155a14f696`
+  },
+  {
+    id: `project-${3}`,
+    title: 'Квартира на Рижской',
+    style: 'Скандинавский',
+    footage: 94,
+    src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-4.png?alt=media&token=dea4ba2c-22b8-45dc-91a9-665edfb2db11`
+  },
+  {
+    id: `project-${4}`,
+    title: 'Квартира на Чистых прудах',
+    style: 'Лофт',
+    footage: 85,
+    src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-5.png?alt=media&token=bc185ecd-a259-43e2-bd42-0877691d00ec`
+  },
+  {
+    id: `project-${5}`,
+    title: 'Квартира на Академической',
+    style: 'Лофт',
+    footage: 108,
+    src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-6.png?alt=media&token=d3afc57c-d88c-4bf3-9c22-feb1041db489`
+  },
+  {
+    id: `project-${6}`,
+    title: 'Квартира на Академической',
+    style: 'Лофт',
+    footage: 111,
+    src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-1.png?alt=media&token=4123edb1-73c9-48ff-bf6e-ec07fc5dae5c`
+  },
+  {
+    id: `project-${7}`,
+    title: 'Квартира на Рижской',
+    style: 'Скандинавский',
+    footage: 222,
+    src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-2.png?alt=media&token=468367b4-1b90-4132-b614-173384ce6624`
+  },
+  {
+    id: `project-${8}`,
+    title: 'Квартира на Чистых прудах',
+    style: 'Лофт',
+    footage: 333,
+    src: `https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-3.png?alt=media&token=bff7c4d9-37c6-49ee-b54f-e4155a14f696`
+  }
+] as TypeReadonly<TypeProject, 'array'>;

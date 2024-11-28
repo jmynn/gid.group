@@ -1,6 +1,7 @@
 import About from '@/components/views/About';
 import Main from '@/components/views/Main';
 import Price from '@/components/views/Price';
+import Projects from '@/components/views/Projects';
 import Services from '@/components/views/Services';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <Price />
       <Services />
+      <Projects />
     </>
   );
 }

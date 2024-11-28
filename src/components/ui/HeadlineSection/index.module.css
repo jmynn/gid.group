@@ -6,6 +6,7 @@
   position: relative;
   padding: 0 0 15px 0;
   text-transform: uppercase;
+  width: 100%;
 }
 .headline::after {
   content: '';

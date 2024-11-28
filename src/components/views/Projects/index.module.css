@@ -1,0 +1,73 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 60px 0 80px;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.link {
+  margin: 0 auto;
+  & > svg {
+    width: 17px;
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .projects {
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    padding: 0 0 20px 0;
+    margin: 50px 0 20px 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: calc(var(--container-undo));
+      z-index: -2;
+      height: 100%;
+      width: 70.38vw;
+      background-color: #f5f5f5;
+    }
+  }
+  .body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    translate: var(--container-undo) 0;
+
+    & > * {
+      flex: 0 0 50%;
+    }
+  }
+  .link {
+    margin: 40px auto 0;
+    font-size: 24px;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .projects {
+    margin: 50px 0 0 0;
+    padding: 0 0 50px 0;
+    gap: 10px;
+  }
+  .body {
+    width: 100%;
+    translate: 0;
+    gap: 50px 0;
+    & > * {
+      flex: 0 0 33.333%;
+    }
+  }
+  .link {
+    margin: 20px auto 0;
+  }
+}

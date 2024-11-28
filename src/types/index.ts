@@ -28,3 +28,13 @@ export type TypeService = {
   title: string;
   text: string;
 };
+
+export type TypeStyle = 'Лофт' | 'Скандинавский';
+
+export type TypeProject = {
+  id: `project-${number}`;
+  title: string;
+  style: TypeStyle;
+  footage: number;
+  src: TypeUrl;
+};

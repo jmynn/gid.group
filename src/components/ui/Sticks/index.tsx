@@ -6,7 +6,7 @@ import { TypePropsClassname } from '@/types';
 
 type Props = TypePropsClassname<HTMLDivElement> & {
   countElement: number;
-  defaultPosition: 0 | 25 | 33 | 50;
+  defaultPosition: 0 | 25 | 33.333 | 50;
   defaultSide?: 'left' | 'right';
   mediaQuery: TypeQuery | `${TypeQuery} and ${TypeQuery}`;
 };
@@ -25,7 +25,7 @@ const Sticks: FunctionComponent<Props> = ({
       {isMedia &&
         Array.from({ length: countElement }, (_, i) => (
           <div
-            className={`${styles.stick} ${className}`}
+            className={`${styles.stick} ${className ?? ''}`}
             key={i}
             style={{
               [defaultSide]: `${(i + 1) * defaultPosition}%`,
