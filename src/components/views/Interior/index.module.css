@@ -1,0 +1,91 @@
+.interior {
+  width: 100vw;
+  translate: var(--container-undo) 0;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Finterior.png?alt=media&token=60aab01c-8e79-4ca2-b78b-0d387d509a2b');
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  margin: 0 0 60px 0;
+  display: flex;
+  justify-content: center;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+}
+.title,
+.item {
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--color-white);
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.title {
+  font-size: var(--fz-text-medium);
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  &::before {
+    content: '';
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--color-white);
+    order: 2;
+  }
+}
+@media screen and (min-width: 834px) {
+  .interior {
+    padding: 80px 0 140px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      align-items: first baseline;
+    }
+  }
+  .title {
+    font-size: var(--fz-text-large);
+  }
+  .item {
+    font-size: var(--fz-headline-2);
+    flex-direction: row;
+    align-items: first baseline;
+    gap: 15px;
+    &::before {
+      width: 15px;
+      order: 0;
+      translate: 0 -50%;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .interior {
+    gap: 100px;
+    padding: 195px 0 225px;
+  }
+  .body {
+    gap: 15px;
+  }
+  .title {
+    font-size: var(--fz-headline-2);
+  }
+  .item {
+    font-size: var(--fz-text-large);
+    &::before {
+      width: 20px;
+      translate: 0 -70%;
+    }
+  }
+}

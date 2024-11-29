@@ -1,4 +1,5 @@
 import About from '@/components/views/About';
+import Interior from '@/components/views/Interior';
 import Main from '@/components/views/Main';
 import Price from '@/components/views/Price';
 import Projects from '@/components/views/Projects';
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Projects />
       <Stages />
+      <Interior />
     </>
   );
 }
