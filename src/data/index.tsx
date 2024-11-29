@@ -192,3 +192,14 @@ export const INTERIOR = [
   'Нужно четко соблюсти Бюджет ',
   'Необходимо ответственно подойти к процессу'
 ] as TypeReadonly<string, 'array'>;
+
+export const INSTAGRAM = [
+  'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Finstagram%2Finst-1.png?alt=media&token=ff95cb39-0f88-40c2-9b6c-d16d802206ad',
+  'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Finstagram%2Finst-2.png?alt=media&token=08c0da5b-cc06-476d-90b1-d767c222d96e',
+  'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Finstagram%2Finst-3.png?alt=media&token=8417699f-5c4f-4c1c-b6fd-26f745cfd80f',
+  'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-5.png?alt=media&token=bc185ecd-a259-43e2-bd42-0877691d00ec',
+  'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-6.png?alt=media&token=d3afc57c-d88c-4bf3-9c22-feb1041db489',
+  'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Fprojects%2Fproj-4.png?alt=media&token=dea4ba2c-22b8-45dc-91a9-665edfb2db11',
+  'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Finstagram%2Finst-7.png?alt=media&token=fe83fa26-caae-4afa-a061-b2b0bfca1e34',
+  'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Finstagram%2Finst-8.png?alt=media&token=42a0d857-3e60-464f-b1df-1a1034223730'
+] as TypeReadonly<string, 'array'>;
