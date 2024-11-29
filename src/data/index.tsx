@@ -29,7 +29,8 @@ export const SVG_COLORS = {
 export const PHONE_NUMBER = '+7 (929) 759 64 55';
 export const PATHS = {
   projects: '/',
-  calculate: '/'
+  calculate: '/',
+  privacy: '/'
 } as TypeReadonly<TypePaths, 'object'>;
 
 export const ABOUT_INFO = [

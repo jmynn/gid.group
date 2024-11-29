@@ -1,4 +1,5 @@
 import About from '@/components/views/About';
+import Feedback from '@/components/views/Feedback';
 import Instagram from '@/components/views/Instagram';
 import Interior from '@/components/views/Interior';
 import Main from '@/components/views/Main';
@@ -18,6 +19,7 @@ export default function Home() {
       <Stages />
       <Interior />
       <Instagram />
+      <Feedback />
     </>
   );
 }

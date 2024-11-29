@@ -1,0 +1,49 @@
+.check {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-weight: 300;
+  line-height: 150%;
+  user-select: none;
+  & > * {
+    color: var(--color-black);
+  }
+  a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    padding: 0 0 0 5px;
+  }
+  input {
+    opacity: 0;
+    width: 1px;
+    position: absolute;
+  }
+
+  ._sq {
+    content: '';
+    width: 17px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--color-black);
+    background-color: transparent;
+    margin: 0 10px 0 0;
+  }
+  input:checked + ._sq {
+    background-color: var(--color-black);
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .check {
+    font-size: var(--fz-text-small);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .check {
+    font-size: 14px;
+  }
+}
+@media screen and (hover: hover) and (pointer: fine) {
+  .check:hover {
+    cursor: pointer;
+  }
+}
