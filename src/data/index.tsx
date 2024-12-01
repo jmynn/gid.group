@@ -1,12 +1,20 @@
 import IconCalculator from '@/components/ui/Icons/IconCalculator';
+import IconFacebook from '@/components/ui/Icons/IconFacebook';
+import IconInst from '@/components/ui/Icons/IconInst';
 import IconMail from '@/components/ui/Icons/IconMail';
 import IconObject from '@/components/ui/Icons/IconObject';
 import IconPaper from '@/components/ui/Icons/IconPaper';
 import IconRoller from '@/components/ui/Icons/IconRoller';
 import IconRuler from '@/components/ui/Icons/IconRuler';
+import IconTelegram from '@/components/ui/Icons/IconTelegram';
+import IconTiktok from '@/components/ui/Icons/IconTiktok';
+import IconWhatsapp from '@/components/ui/Icons/IconWhatsapp';
+import IconYoutube from '@/components/ui/Icons/IconYoutube';
 import {
   TypeAboutItem,
   TypeBonus,
+  TypeFooter,
+  TypeFooterSocial,
   TypePaths,
   TypeProject,
   TypeReadonly,
@@ -204,3 +212,109 @@ export const INSTAGRAM = [
   'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Finstagram%2Finst-7.png?alt=media&token=fe83fa26-caae-4afa-a061-b2b0bfca1e34',
   'https://firebasestorage.googleapis.com/v0/b/avion-d6f01.appspot.com/o/gid%2Fmain%20page%2Finstagram%2Finst-8.png?alt=media&token=42a0d857-3e60-464f-b1df-1a1034223730'
 ] as TypeReadonly<string, 'array'>;
+
+export const FOOTER_LINKS = [
+  {
+    id: 'company',
+    title: 'Компания gid',
+    links: [
+      {
+        path: '/',
+        label: 'О нас'
+      },
+      {
+        path: '/',
+        label: 'Наша команда'
+      },
+      {
+        path: '/',
+        label: 'История'
+      }
+    ]
+  },
+  {
+    id: 'projets',
+    title: 'Проекты',
+    links: [
+      {
+        path: '/',
+        label: 'Квартиры'
+      },
+      {
+        path: '/',
+        label: 'Коттеджы'
+      },
+      {
+        path: '/',
+        label: 'Офисы'
+      },
+      {
+        path: '/',
+        label: 'Рестораны'
+      }
+    ]
+  },
+  {
+    id: 'services',
+    title: 'Услуги',
+    links: [
+      {
+        path: '/',
+        label: 'Квартиры'
+      },
+      {
+        path: '/',
+        label: 'Коттеджы'
+      },
+      {
+        path: '/',
+        label: 'Офисы'
+      },
+      {
+        path: '/',
+        label: 'Рестораны'
+      }
+    ]
+  },
+  {
+    id: 'contacts',
+    title: 'Контакты',
+    links: [
+      {
+        path: 'tel:+(7495) 555-15-05',
+        label: '+(7495) 555-15-05'
+      },
+      {
+        path: 'mailto:info@gid.pro',
+        label: 'info@gid.pro'
+      }
+    ]
+  }
+] as TypeReadonly<TypeFooter, 'array'>;
+
+export const FOOTER_SOCIALS = [
+  {
+    icon: <IconTelegram color="dark" />,
+    path: '/'
+  },
+  {
+    icon: <IconInst />,
+    path: '/'
+  },
+  {
+    icon: <IconFacebook />,
+    path: '/'
+  },
+  {
+    icon: <IconYoutube color="dark" />,
+    path: '/'
+  },
+  {
+    icon: <IconTiktok color="dark" />,
+    path: '/'
+  },
+  {
+    icon: <IconWhatsapp color="dark" />,
+    path: '/'
+  }
+] as TypeReadonly<TypeFooterSocial, 'array'>;

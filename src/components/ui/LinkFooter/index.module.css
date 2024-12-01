@@ -1,0 +1,15 @@
+.link {
+  font-size: var(--fz-text-medium);
+  color: var(--color-light-gray);
+  line-height: 150%;
+}
+@media screen and (min-width: 834px) {
+  .link {
+    font-size: var(--fz-text-small);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .link {
+    font-size: var(--fz-text-regular);
+  }
+}

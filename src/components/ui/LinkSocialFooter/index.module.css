@@ -1,0 +1,9 @@
+.link {
+  display: block;
+  width: 20px;
+}
+@media screen and (min-width: 1920px) {
+  .link {
+    width: 40px;
+  }
+}

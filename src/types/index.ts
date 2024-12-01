@@ -45,3 +45,15 @@ export type TypeStage = {
   text: string;
   description?: string;
 };
+
+export type TypeFooterData = Record<'path' | 'label', string>;
+export type TypeFooter = {
+  id: string;
+  title: string;
+  links: TypeFooterData[];
+};
+
+export type TypeFooterSocial = {
+  icon: ReactNode;
+  path: TypePath | TypeUrl;
+};

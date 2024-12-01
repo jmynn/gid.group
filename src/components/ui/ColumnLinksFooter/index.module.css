@@ -1,0 +1,25 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.title {
+  color: var(--color-accent);
+}
+
+@media screen and (min-width: 834px) {
+  .column {
+    align-items: first baseline;
+    gap: 12px;
+  }
+  .title {
+    font-weight: 700;
+    font-size: var(--fz-text-small);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .column {
+    gap: 40px;
+  }
+}

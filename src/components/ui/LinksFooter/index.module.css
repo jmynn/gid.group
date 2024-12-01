@@ -1,0 +1,15 @@
+.links {
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 834px) {
+  .links {
+    gap: 60px;
+    align-items: first baseline;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .links {
+    gap: 160px;
+  }
+}
